@@ -2,8 +2,6 @@ import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import Navbar from "../components/Navbar";
-import BuyButton from "../components/BuyButton";
-
 
 const Menu =()=>{
 
@@ -74,7 +72,6 @@ const Menu =()=>{
             </div>
 
             </div>
-            <BuyButton/>
         </div>
     )
 }

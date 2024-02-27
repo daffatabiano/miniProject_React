@@ -67,8 +67,10 @@ const Navbar = () => {
                             </ul>
                         </li>
                     </ul>
-
-                    <button className="btn me-3"><i className="bi bi-person-fill"></i> Login</button>
+                    
+                    <Link to={"/login"}>
+                    <button className="btn" ><i className="bi bi-person-fill"></i> Login</button>
+                    </Link>
                 </div>
             </div>
             </div>
