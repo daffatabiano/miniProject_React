@@ -16,7 +16,7 @@ const Navbar = () => {
 
     return (
         <div className="navbar">
-            <div className="navbar-expand-sm fixed-top">
+            <div className="navbar-expand-sm fixed-top ">
                 <div className={color? "navbar navbar-scrolled":"navbar"}>
                 <Link className="navbar-brand nav-link ps-4" to={"/"} >
                     <img src={Logo} alt="Logo-Coffee" width="50" height="35" />
