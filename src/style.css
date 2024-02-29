@@ -83,6 +83,10 @@ html::-webkit-scrollbar-thumb {
     color: var(--text-shadow);
 }
 
+body{
+    height: 200rem;
+}
+
 .btn {
     background-color: transparent;
     border: .6px solid var(--text-color);

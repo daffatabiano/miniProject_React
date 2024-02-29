@@ -5,7 +5,7 @@ const About = () => {
         <div>
             <header className="masthead">
                 <p className="masthead-intro">Hii..</p>
-                <h1 className="masthead-heading">Welcome To Our Saloon Cafè</h1>
+                <h1 className="masthead-heading">Welcome To Our <span>Saloon Cafè</span></h1>
             </header>
             <section className="intro">
                 <h1>Introduction</h1>

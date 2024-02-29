@@ -17,10 +17,9 @@ body {
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: -0.02em;
-    text-shadow: 1.5px 3px 0px #edc647;
-    color: #F7E199;
-    margin-top: -0.2em;
+    text-shadow: 1.5px 3px 0px #3e291f;
+    color: #644232;
+    /* margin-top: 0.8em; */
   
   }
 
@@ -28,8 +27,14 @@ body {
     font-size: 2em;
     font-family: "Gentium Book Basic", Georgia, serif;
     text-align: center;
-    color: #e5e5e5;
-    margin-bottom: 0.1em;
+    /* background: #000; */
+    box-sizing: border-box;
+    color: #3e291f;
+    padding-top: 8.5rem;
+  }
+
+  .masthead-heading>span {
+    color: #f7e199;
   }
 
   .intro,
@@ -65,7 +70,7 @@ section > h1 {
     font-size: 1.2em;
     font-family: "Gentium Book Basic";
     font-weight: bold;
-    color: #f7e199;
+    color: #ec9717;
   }
 
   .content-footer {

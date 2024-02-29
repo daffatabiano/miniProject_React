@@ -2,7 +2,6 @@ import { useState } from "react";
 import "../style.css";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
 
 const Login = () => {
     const navigate = useNavigate()
@@ -45,7 +44,6 @@ const Login = () => {
 
     return (
         <body className="loginBody">
-            <Navbar />
             <div className="container Body p-5 d-flex shadow-lg ">
                 <div className="container">
                     <button className="btn w-25" onClick={() => navigate(-1)}>Back </button>
