@@ -83,10 +83,6 @@ html::-webkit-scrollbar-thumb {
     color: var(--text-shadow);
 }
 
-body{
-    height: 200rem;
-}
-
 .btn {
     background-color: transparent;
     border: .6px solid var(--text-color);
@@ -104,6 +100,10 @@ body{
     width: 100px;
 }
 
+.btnHomeImage {
+    margin-inline-start: 150px;
+}
+
 .homeSection {
     display: flex;
     min-height: 150vh;
@@ -114,6 +114,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    margin-top: -35px;
 }
 
 .homeSection .homeContent {
