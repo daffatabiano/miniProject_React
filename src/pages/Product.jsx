@@ -1,54 +1,57 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import Navbar from '../components/Navbar';
 const Product = () => {
     const [product, setProduct] = useState([]);
     const getProduct = () => {
         axios
             .get('https://fake-coffee-api.vercel.app/api')
             .then((res) => {
-                setProduct(res.data)
+                setProduct(res.data);
             })
-            .catch(err => {
+            .catch((err) => {
                 console.log(err);
-            })
-    }
+            });
+    };
     useEffect(() => {
-        getProduct()
-    }, [])
+        getProduct();
+    }, []);
 
-    return(
-        <div>
+    return (
+        <div className="container">
             <Navbar />
             <h1>Fresh Beans</h1>
             {product.map((item) => (
                 <div key={item.id}>
-                    <div id="carouselExample" className="carousel slide">
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src={item.image_url} className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item">
-      <img src={item.image_url} className="d-block w-100" alt="..."/>
-    </div>
-    <div className="carousel-item">
-      <img src={item.image_url} className="d-block w-100" alt="..."/>
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-
+                    <div className="container">
+                        <div className="row">
+                            <div className="card text-black mb-3 col-3">
+                                <div className="card-header">
+                                    Web Development
+                                </div>
+                                <div className="card-body">
+                                    <h5 className="card-title">
+                                        Front End + Backend
+                                    </h5>
+                                    <p className="card-text">
+                                        Some quick example text to build on the
+                                        card title and make up the bulk of the
+                                        card's content.
+                                    </p>
+                                    <a
+                                        href="#"
+                                        className="btn btn-outline-primary center"
+                                    >
+                                        View our curriculum
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>
-    )
-}
+    );
+};
 
 export default Product;
