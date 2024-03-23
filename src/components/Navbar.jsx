@@ -1,12 +1,9 @@
 import { Link } from 'react-router-dom';
 import '../style.css';
 import { useState } from 'react';
-import Button from './elements/button';
-import LogoImage from './elements/LogoImage';
-import UnderListed from './elements/List/UnderListed';
-import ListNavbar from './elements/List/ListNavbar';
-import Dropdown from './elements/List/DropdownList';
-import DropDownItem from './elements/List/DropdownList/DropdownItem';
+import LogoImage from './elements/LogoImageo';
+import Navbaritem from './elements/NavbarItem';
+import ResponsiveButton from './elements/button/ResponsiveButton';
 
 const Navbar = () => {
     const [color, setColor] = useState(false);
@@ -26,34 +23,8 @@ const Navbar = () => {
                     <Link className="navbar-brand nav-link ps-4" to={'/'}>
                         <LogoImage />
                     </Link>
-                    <button
-                        className="navbar-toggler m-3"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#mynavbar"
-                    >
-                        <span>
-                            <i className="bi bi-list"></i>
-                        </span>
-                    </button>
-
-                    <div className="collapse navbar-collapse " id="mynavbar">
-                        <UnderListed>
-                            <ListNavbar navbarItems="Home" />
-                            <ListNavbar navbarItems="About" />
-                            <Dropdown menu="Menu">
-                                <DropDownItem textfill="Cool Drink" />
-                                <DropDownItem textfill="Hot Drink" />
-                            </Dropdown>
-                            <Dropdown menu="Product">
-                                <DropDownItem textfill="Beans" />
-                            </Dropdown>
-                        </UnderListed>
-
-                        <Button classname="btn">
-                            <i className="bi bi-person-fill"></i> Login
-                        </Button>
-                    </div>
+                    <ResponsiveButton />
+                    <Navbaritem />
                 </div>
             </div>
         </div>
