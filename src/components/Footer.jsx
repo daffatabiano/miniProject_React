@@ -1,4 +1,5 @@
 import '../footer.css';
+import FooterListed from './elements/ParsingFooter/FooterList';
 
 const Footer = () => {
     return (
@@ -8,33 +9,24 @@ const Footer = () => {
                 <div className="container">
                     <div className="footer-cta pt-5 pb-5">
                         <div className="row">
-                            <div className="col-xl-4 col-md-4 mb-30">
-                                <div className="single-cta">
-                                    <i className="fas fa-map-marker-alt"></i>
-                                    <div className="cta-text">
-                                        <h4>Find us</h4>
-                                        <span>Jakarta Center, Indonesian</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-4 col-md-4 mb-30">
-                                <div className="single-cta">
-                                    <i className="fas fa-phone"></i>
-                                    <div className="cta-text">
-                                        <h4>Call us</h4>
-                                        <span>+62 812 3456 789</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-xl-4 col-md-4 mb-30">
-                                <div className="single-cta">
-                                    <i className="far fa-envelope-open"></i>
-                                    <div className="cta-text">
-                                        <h4>Mail us</h4>
-                                        <span>Daffatabianoo@gmail.com</span>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* making parting of a Find Us/ Call us /Mail us
+                            START */}
+                            <FooterListed>
+                                <FooterListed.singleCta
+                                    title="Find Us"
+                                    text="Central Jakarta, Jakarta Indonesia"
+                                />
+                                <FooterListed.singleCta
+                                    title="Call Us"
+                                    text="(+62) 123 456 789"
+                                />
+                                <FooterListed.singleCta
+                                    title="Mail Us"
+                                    text="WjV2O@example.com"
+                                />
+                            </FooterListed>
+
+                            {/* END */}
                         </div>
                     </div>
                     <div className="footer-content pt-5 pb-5">
@@ -73,45 +65,14 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
-                                <div className="footer-widget">
-                                    <div className="footer-widget-heading">
-                                        <h3>Useful Links</h3>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">about</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">services</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">portfolio</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">About us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Our Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Expert Team</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Latest News</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+
+                            {/* making a part footer-widget on Useful Links Named 
+                            START*/}
+
+                            {/* END */}
+
+                            {/* making a parsing footer widget on Subscribe Named
+                                START */}
                             <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
                                 <div className="footer-widget">
                                     <div className="footer-widget-heading">
@@ -136,6 +97,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
+                            {/* END */}
                         </div>
                     </div>
                 </div>

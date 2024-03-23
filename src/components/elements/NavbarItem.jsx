@@ -1,10 +1,10 @@
-import Dropdown from "./List/DropdownList";
-import DropDownItem from "./List/DropdownList/DropdownItem";
-import ListNavbar from "./List/ListNavbar";
-import UnderListed from "./List/UnderListed";
-import Button from "./button";
+import Dropdown from './List/DropdownList';
+import DropDownItem from './List/DropdownList/DropdownItem';
+import ListNavbar from './List/ListNavbar';
+import UnderListed from './List/UnderListed';
+import Button from './button';
 
-const Navbaritem = (props) => {
+const Navbaritem = () => {
     return (
         <>
             <div className="collapse navbar-collapse " id="mynavbar">
@@ -26,6 +26,6 @@ const Navbaritem = (props) => {
             </div>
         </>
     );
-}
+};
 
 export default Navbaritem;
