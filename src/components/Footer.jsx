@@ -1,5 +1,7 @@
 import '../footer.css';
+import FormInput from './elements/Form';
 import FooterListed from './elements/ParsingFooter/FooterList';
+import FooterLinks from './fragments/FooterWidget';
 
 const Footer = () => {
     return (
@@ -12,17 +14,17 @@ const Footer = () => {
                             {/* making parting of a Find Us/ Call us /Mail us
                             START */}
                             <FooterListed>
-                                <FooterListed.singleCta
+                                <FooterListed.FooterCtaList
                                     title="Find Us"
-                                    text="Central Jakarta, Jakarta Indonesia"
+                                    text="Central Jakarta, Indonesia"
                                 />
-                                <FooterListed.singleCta
+                                <FooterListed.FooterCtaList
                                     title="Call Us"
-                                    text="(+62) 123 456 789"
+                                    text="+62 812-3456-7890"
                                 />
-                                <FooterListed.singleCta
+                                <FooterListed.FooterCtaList
                                     title="Mail Us"
-                                    text="WjV2O@example.com"
+                                    text="Example@ex.com"
                                 />
                             </FooterListed>
 
@@ -68,35 +70,18 @@ const Footer = () => {
 
                             {/* making a part footer-widget on Useful Links Named 
                             START*/}
-
+                            <FooterLinks>
+                                <FooterLinks.Widget />
+                            </FooterLinks>
                             {/* END */}
 
                             {/* making a parsing footer widget on Subscribe Named
                                 START */}
-                            <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
-                                <div className="footer-widget">
-                                    <div className="footer-widget-heading">
-                                        <h3>Subscribe</h3>
-                                    </div>
-                                    <div className="footer-text mb-25">
-                                        <p>
-                                            Don’t miss to subscribe to our new
-                                            feeds, kindly fill the form below.
-                                        </p>
-                                    </div>
-                                    <div className="subscribe-form">
-                                        <form action="#">
-                                            <input
-                                                type="text"
-                                                placeholder="Email Address"
-                                            />
-                                            <button>
-                                                <i className="fab fa-telegram-plane"></i>
-                                            </button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                            <FooterLinks>
+                                <FooterLinks.FooterSubscribe>
+                                    <FormInput />
+                                </FooterLinks.FooterSubscribe>
+                            </FooterLinks>
                             {/* END */}
                         </div>
                     </div>
