@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import FooterListed from '../elements/ParsingFooter/FooterList';
 
 const FooterLinks = (props) => {

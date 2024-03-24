@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../style.css';
 import { useState } from 'react';
-import LogoImage from './elements/LogoImageo';
+import LogoImage from './elements/LogoImageNav';
 import Navbaritem from './elements/NavbarItem';
 import ResponsiveButton from './elements/button/ResponsiveButton';
 
